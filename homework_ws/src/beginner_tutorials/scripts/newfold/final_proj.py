@@ -18,6 +18,8 @@ if os.name == 'nt': # if windows
   import msvcrt
 else:
   import tty, termios
+import matplotlib.patches as mpatches
+from matplotlib.collections import PatchCollection
 
 def callback_pos(data, data_out):
 	data_out.linear.x = data.pose.pose.position.x
